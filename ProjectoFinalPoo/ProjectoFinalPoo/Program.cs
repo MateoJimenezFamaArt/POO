@@ -4,8 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("test de push & pull");
+            Console.WriteLine("Vamos a realizar la creacion de clases");
         }
     }
 }
