@@ -1,0 +1,14 @@
+C:\Users\mateo\OneDrive\Documents\GitHub\POO\ProjectoFinalPoo\ProjectoFinalPoo\bin\Debug\net7.0\ProjectoFinalPoo.exe
+C:\Users\mateo\OneDrive\Documents\GitHub\POO\ProjectoFinalPoo\ProjectoFinalPoo\bin\Debug\net7.0\ProjectoFinalPoo.deps.json
+C:\Users\mateo\OneDrive\Documents\GitHub\POO\ProjectoFinalPoo\ProjectoFinalPoo\bin\Debug\net7.0\ProjectoFinalPoo.runtimeconfig.json
+C:\Users\mateo\OneDrive\Documents\GitHub\POO\ProjectoFinalPoo\ProjectoFinalPoo\bin\Debug\net7.0\ProjectoFinalPoo.dll
+C:\Users\mateo\OneDrive\Documents\GitHub\POO\ProjectoFinalPoo\ProjectoFinalPoo\bin\Debug\net7.0\ProjectoFinalPoo.pdb
+C:\Users\mateo\OneDrive\Documents\GitHub\POO\ProjectoFinalPoo\ProjectoFinalPoo\obj\Debug\net7.0\ProjectoFinalPoo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mateo\OneDrive\Documents\GitHub\POO\ProjectoFinalPoo\ProjectoFinalPoo\obj\Debug\net7.0\ProjectoFinalPoo.AssemblyInfoInputs.cache
+C:\Users\mateo\OneDrive\Documents\GitHub\POO\ProjectoFinalPoo\ProjectoFinalPoo\obj\Debug\net7.0\ProjectoFinalPoo.AssemblyInfo.cs
+C:\Users\mateo\OneDrive\Documents\GitHub\POO\ProjectoFinalPoo\ProjectoFinalPoo\obj\Debug\net7.0\ProjectoFinalPoo.csproj.CoreCompileInputs.cache
+C:\Users\mateo\OneDrive\Documents\GitHub\POO\ProjectoFinalPoo\ProjectoFinalPoo\obj\Debug\net7.0\ProjectoFinalPoo.dll
+C:\Users\mateo\OneDrive\Documents\GitHub\POO\ProjectoFinalPoo\ProjectoFinalPoo\obj\Debug\net7.0\refint\ProjectoFinalPoo.dll
+C:\Users\mateo\OneDrive\Documents\GitHub\POO\ProjectoFinalPoo\ProjectoFinalPoo\obj\Debug\net7.0\ProjectoFinalPoo.pdb
+C:\Users\mateo\OneDrive\Documents\GitHub\POO\ProjectoFinalPoo\ProjectoFinalPoo\obj\Debug\net7.0\ProjectoFinalPoo.genruntimeconfig.cache
+C:\Users\mateo\OneDrive\Documents\GitHub\POO\ProjectoFinalPoo\ProjectoFinalPoo\obj\Debug\net7.0\ref\ProjectoFinalPoo.dll
