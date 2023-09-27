@@ -1,4 +1,5 @@
 ﻿using System.Numerics;
+using System.Threading.Channels;
 
 namespace ProjectoFinalPoo
 {
@@ -6,6 +7,14 @@ namespace ProjectoFinalPoo
     {
         static void Main(string[] args)
         {
+            Granjero granjero = new Granjero();
+            Bandidos bandidos = new Bandidos();
+            Mercader mercader = new Mercader();
+            TiendaDelPueblo tienda = new TiendaDelPueblo();
+            Clima clima = new Clima();
+
+            
+
             Console.WriteLine("Vamos a realizar la creacion de clases");
             Console.WriteLine("Hola, bienvenido a farm simulator Console Edition TM.");
             Console.WriteLine("Porfavor dime cuantos dias deseas jugar?");
@@ -13,10 +22,18 @@ namespace ProjectoFinalPoo
             int Daystoplay = 0;
             Daystoplay = int.Parse (Console.ReadLine());
 
+            for (int i = 1; i < Daystoplay + 1; i++)
+            {
+                clima.ElegirDia();
+                granjero.TrabajarEnElCampo();
 
+            }
 
-            Granjero g1 = new Granjero();
-            g1.TrabajarEnElCampo();
+               
+            
+
         }
     }
+
+
 }

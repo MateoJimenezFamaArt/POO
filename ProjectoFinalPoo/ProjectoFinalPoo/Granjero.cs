@@ -8,6 +8,8 @@ namespace ProjectoFinalPoo
 {
     internal class Granjero
     {
+        Clima clima = new Clima();
+
         public void TrabajarEnElCampo()
         {
             Console.WriteLine("El sol ya ha salido, te das una buena estirada y te preparas para salir al campo");
@@ -18,11 +20,17 @@ namespace ProjectoFinalPoo
             int InstantResponse = 0;
             InstantResponse = int.Parse(Console.ReadLine());
 
-            if(InstantResponse != 1 || InstantResponse != 2) { Console.WriteLine("Porfavor haz un input congruente"); InstantResponse = int.Parse(Console.ReadLine());}
             if (InstantResponse == 1) { Console.WriteLine("Preparandote para salir al campo tomas la hoz para trabajar en trigos lo jornada sera larga pero valdra la pena."); }
             if (InstantResponse == 2) { Console.WriteLine("Preparandote para salir al campo tomas los guantes y la azada para salir a trabajar en las papas, la jornada sera larga pero valdra la pena"); }
 
         }
+        //quitar esta clase 
+        public void ComprarDefensas() { }
+
+        public void Vender() { }
+
+        public void ComprarDaga() { }
+
 
     }
 }

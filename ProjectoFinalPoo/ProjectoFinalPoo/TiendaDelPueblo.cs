@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProjectoFinalPoo
 {
-    internal class Mercader
+    internal class TiendaDelPueblo
     {
-        public void SolicitarProducto() { }
-
-        public void ComprarProducto() { }
+        public void VenderDaga() { }
 
     }
 }

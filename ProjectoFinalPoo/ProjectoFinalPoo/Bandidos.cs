@@ -8,5 +8,12 @@ namespace ProjectoFinalPoo
 {
     internal class Bandidos
     {
+        public void Amenazar() { }
+
+        public void RobarRecursos() { }
+
+        public void MatarAlGranjero() { }
+
+
     }
 }
