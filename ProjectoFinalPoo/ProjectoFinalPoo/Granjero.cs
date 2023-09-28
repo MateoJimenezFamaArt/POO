@@ -10,23 +10,22 @@ namespace ProjectoFinalPoo
     {
         Clima clima = new Clima();
 
-        public void TrabajarEnElCampo()
+        public int TrabajarEnElCampo()
         {
-            Console.WriteLine("El sol ya ha salido, te das una buena estirada y te preparas para salir al campo");
-            Console.WriteLine("Con un fuerte suspiro te levantas y vislumbras el campo, ha llegado el momento.");
             Console.WriteLine("Es hora de trabajar...");
-            Console.WriteLine("Vas a preparar el campo para trabjar en Trigo o en Papas?");
-            Console.WriteLine("1 = SI /// 2 = NO");
-            int InstantResponse = 0;
-            InstantResponse = int.Parse(Console.ReadLine());
+            Console.WriteLine("Vas al cobertizo y debes tomar la primera decision del dia, que cosecha trabajaras el dia de hoy? ");
+            Console.WriteLine("1 = Trigo /// 2 = Papa");
+            int EleccionDeTrabajo = 0;
+            EleccionDeTrabajo = int.Parse(Console.ReadLine());
 
-            if (InstantResponse == 1) { Console.WriteLine("Preparandote para salir al campo tomas la hoz para trabajar en trigos lo jornada sera larga pero valdra la pena."); }
-            if (InstantResponse == 2) { Console.WriteLine("Preparandote para salir al campo tomas los guantes y la azada para salir a trabajar en las papas, la jornada sera larga pero valdra la pena"); }
-
+            if (EleccionDeTrabajo == 1) { Console.WriteLine("Preparandote para salir al campo tomas la hoz, el sombrero de paja y la guadaña "); return EleccionDeTrabajo; }
+            if (EleccionDeTrabajo == 2) { Console.WriteLine("Preparandote para salir al campo tomas los guantes y la azada"); return EleccionDeTrabajo; }
+            else {return EleccionDeTrabajo; };
         }
         //quitar esta clase 
         public void ComprarDefensas() { }
 
+        //public void Buscar un Vendedor() {}
         public void Vender() { }
 
         public void ComprarDaga() { }
