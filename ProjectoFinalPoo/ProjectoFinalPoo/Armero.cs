@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectoFinalPoo
 {
-    internal class TiendaDelPueblo
+    internal class Armero
     {
         public void VenderDaga() { }
 

@@ -26,9 +26,15 @@ namespace ProjectoFinalPoo
         public void ComprarDefensas() { }
 
         //public void Buscar un Vendedor() {}
-        public void Vender() { }
+        public void Vender() 
+        { 
+        
+        }
 
-        public void ComprarDaga() { }
+        public void ComprarDaga() 
+        { 
+        
+        }
 
 
     }

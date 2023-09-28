@@ -10,7 +10,7 @@ namespace ProjectoFinalPoo
             Granjero granjero = new Granjero();
             Bandidos bandidos = new Bandidos();
             Mercader mercader = new Mercader();
-            TiendaDelPueblo tienda = new TiendaDelPueblo();
+            Armero armero = new Armero();
             Clima clima = new Clima();
 
             int DiaRandom = 0;
@@ -83,11 +83,26 @@ namespace ProjectoFinalPoo
                         Console.WriteLine("Vaya que mala suerte, trabajaste muy fuertemente pero el clima no te ayudo a conseguir ningun fruto");
                         Console.ForegroundColor = ConsoleColor.White;
                     }
+                } // Fin de decision del campo
 
-                }
+
                 if (RespuestaDiaria == 2) // Decidio ir al pueblo a comprar cosas
                 {
                     Console.WriteLine("Despues de un buen desayuno te embarcas rumbo al pueblo...");
+                    Console.WriteLine("Tras una caminata bastante larga logras llegar al pueblo, ahora debes decidir que quieres hacer.");
+                    Console.WriteLine("1 - Para ir a la plaza del mercado a vender tu producto");
+                    Console.WriteLine("2 - Para ir a donde el armero a comprpar una daga");
+                    int RespuestaDePueblo = int.Parse(Console.ReadLine());
+
+                    if (RespuestaDePueblo == 1) 
+                    {
+                        mercader.SolicitarProducto();
+                    }
+                    if (RespuestaDePueblo == 2) 
+                    {
+                        armero.VenderDaga();
+                    }
+
                 }
 
 
