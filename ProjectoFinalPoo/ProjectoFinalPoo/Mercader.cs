@@ -8,7 +8,23 @@ namespace ProjectoFinalPoo
 {
     internal class Mercader
     {
-        public void SolicitarProducto() { }
+        public int SolicitarProducto() 
+        {
+            int ProductNeeded = 0;
+            Random randomDay = new Random();
+
+            ProductNeeded = randomDay.Next(1, 3);
+
+            if (ProductNeeded == 1) // 1 = Trigo
+            {
+                return ProductNeeded;
+            }
+            if (ProductNeeded == 2) // 2 = Papa
+            {
+                return ProductNeeded;
+            }
+            else { return ProductNeeded; }
+        }
 
         public void ComprarProducto() { }
 

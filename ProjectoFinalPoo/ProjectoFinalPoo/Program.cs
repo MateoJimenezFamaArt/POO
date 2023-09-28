@@ -15,6 +15,8 @@ namespace ProjectoFinalPoo
 
             int DiaRandom = 0;
             int EleccionCampo = 0; // 1 = trigo // 2 = papa
+            int EleccionMercader = 0;
+            string EleccionMercaderstr = " ";
 
 
             //Contadores
@@ -96,7 +98,44 @@ namespace ProjectoFinalPoo
 
                     if (RespuestaDePueblo == 1) 
                     {
-                        mercader.SolicitarProducto();
+                        Console.WriteLine("Con determinacion te diriges hacia la plaza de mercado del pueblo");
+                        Console.WriteLine("Pasas de puesto en puesto viendo como hay un poco de todo, desde carpinteros hasta artefactos magicos");
+                        Console.WriteLine("Luego de una buena caminata llegas al lugar que tanto estuviste esperando...");
+                        Thread.Sleep(1000);
+                        Console.WriteLine("El puesto de compraventa de bienes agricolas");
+                        Console.WriteLine("Te acercas al puesto principal en donde le preguntas al tendero que productos estan solicitando hoy?");
+                        EleccionMercader = mercader.SolicitarProducto();
+                        Console.ForegroundColor= ConsoleColor.DarkBlue;
+                        if(EleccionMercader == 1) { EleccionMercaderstr = "trigo"; }
+                        if (EleccionMercader == 2) { EleccionMercaderstr = "papa"; }
+                        Console.WriteLine("Hola señor agricola como te encuentras el dia de hoy? En el momento estoy revisando inventario y nos hace falta un poco de " + EleccionMercaderstr);
+                        Console.WriteLine("Dejame ver tu inventario a ver como estas de recursos");
+                        if (EleccionMercader == 1 & Trigo != 0)
+                        { 
+                            Console.WriteLine("Veo que si tienes un poco de trigo para venderme, que dices hacemos un trato?");
+                            Console.WriteLine("1 - Si");
+                            Console.WriteLine("2 - No");
+                            int RespuestadeVender = int.Parse(Console.ReadLine());
+
+                            if (RespuestadeVender == 1) { granjero.Vender(); }
+                            if (RespuestadeVender == 2) { Console.WriteLine("Ohhh esta bien, entiendo vuelve cuando quiera vender y aca te recibiremos."); }
+
+                        }
+                        if (EleccionMercader == 2 & Papa != 0)
+                        { 
+                            Console.WriteLine("Veo que si tienes un poco de papa para venderme, que dices hacemos un trato?");
+                            int RespuestadeVender = int.Parse(Console.ReadLine());
+
+                            if (RespuestadeVender == 1) { granjero.Vender(); }
+                            if (RespuestadeVender == 2) { Console.WriteLine("Ohhh esta bien, entiendo vuelve cuando quiera vender y aca te recibiremos."); }
+
+                        }
+
+
+
+
+
+
                     }
                     if (RespuestaDePueblo == 2) 
                     {
