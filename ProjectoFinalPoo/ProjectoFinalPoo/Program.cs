@@ -37,6 +37,14 @@ namespace ProjectoFinalPoo
                 clima.ElegirDia();
                 DiaRandom = clima.ElegirDia();
 
+
+                //Console.WriteLine("te amo yuli <3");
+
+                //Console.WriteLine("marlon marlon marlon marlon marlon merlon merlon");
+
+                //Console.WriteLine("jfajsdflafaosamofvnaoaofa putos  todos onaodsfnaofafqoqeer")
+
+
                 Console.WriteLine("El dia comienza brillante y radiante.");
                 Console.WriteLine("Saltas de la cama con un brinco asombrante ");
                 Console.WriteLine("Abres la ventana dando un suspiro impactante ");
@@ -110,6 +118,15 @@ namespace ProjectoFinalPoo
                         if (EleccionMercader == 2) { EleccionMercaderstr = "papa"; }
                         Console.WriteLine("Hola señor agricola como te encuentras el dia de hoy? En el momento estoy revisando inventario y nos hace falta un poco de " + EleccionMercaderstr);
                         Console.WriteLine("Dejame ver tu inventario a ver como estas de recursos");
+
+                        //Inventario b4
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine("INVENTARIO ANTES DE INTERACTUAR");
+                        Console.WriteLine("TRIGO -> " + Trigo);
+                        Console.WriteLine("PAPA -> " + Papa);
+                        Console.WriteLine("ORO -> " + Oro);
+                        Console.ForegroundColor = ConsoleColor.White;
+
                         if (EleccionMercader == 1 & Trigo != 0)
                         { 
                             Console.WriteLine("Veo que si tienes un poco de trigo para venderme, que dices hacemos un trato?");
@@ -117,8 +134,8 @@ namespace ProjectoFinalPoo
                             Console.WriteLine("2 - No");
                             int RespuestadeVender = int.Parse(Console.ReadLine());
 
-                            if (RespuestadeVender == 1) { granjero.Vender(); }
-                            if (RespuestadeVender == 2) { Console.WriteLine("Ohhh esta bien, entiendo vuelve cuando quiera vender y aca te recibiremos."); }
+                            if (RespuestadeVender == 1) { granjero.Vender();Trigo--; Oro++; } //Issue Inverse Logic
+                            if (RespuestadeVender == 2) { Console.WriteLine("Ohhh esta bien, entiendo vuelve cuando quieras vender y aca te recibiremos."); }
 
                         }
                         if (EleccionMercader == 2 & Papa != 0)
@@ -126,11 +143,18 @@ namespace ProjectoFinalPoo
                             Console.WriteLine("Veo que si tienes un poco de papa para venderme, que dices hacemos un trato?");
                             int RespuestadeVender = int.Parse(Console.ReadLine());
 
-                            if (RespuestadeVender == 1) { granjero.Vender(); }
-                            if (RespuestadeVender == 2) { Console.WriteLine("Ohhh esta bien, entiendo vuelve cuando quiera vender y aca te recibiremos."); }
-
+                            if (RespuestadeVender == 1) { granjero.Vender(); Papa --; Oro++; } //Issue Inverse Logic
+                            if (RespuestadeVender == 2) { Console.WriteLine("Ohhh esta bien, entiendo vuelve cuando quieras vender y aca te recibiremos."); }
+                                                                                                                                                             
                         }
 
+                        //Inventario a4
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        Console.WriteLine("INVENTARIO DESPUES DE INTERACTUAR");
+                        Console.WriteLine("TRIGO -> " + Trigo);
+                        Console.WriteLine("PAPA -> " + Papa);
+                        Console.WriteLine("ORO -> " + Oro);
+                        Console.ForegroundColor = ConsoleColor.White;
 
 
 
