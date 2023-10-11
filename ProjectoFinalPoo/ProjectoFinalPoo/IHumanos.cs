@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectoFinalPoo
 {
-    internal interface InterfazHumana
+    internal interface IHumanos
     {
         public void TrabajarCampo();
 

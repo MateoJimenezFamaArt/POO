@@ -11,7 +11,7 @@ namespace ProjectoFinalPoo
         Clima clima = new Clima();
         Mercader mercader = new Mercader();
 
-        public int TrabajarEnElCampo()
+        public int TrabajarCampo()
         {
             Console.WriteLine("Es hora de trabajar...");
             Console.WriteLine("Vas al cobertizo y debes tomar la primera decision del dia, que cosecha trabajaras el dia de hoy? ");

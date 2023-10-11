@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProjectoFinalPoo
 {
-    internal class Mercader
+    internal class Mercader:IHumanos
     {
+
         public int SolicitarProducto() 
         {
             int ProductNeeded = 0;
@@ -27,6 +28,7 @@ namespace ProjectoFinalPoo
         }
 
         public void ComprarProducto() { }
+
 
     }
 }

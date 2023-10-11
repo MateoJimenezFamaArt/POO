@@ -57,7 +57,7 @@ namespace ProjectoFinalPoo
                 if (RespuestaDiaria == 1) // Decidio trabajar en el campo
                 {
 
-                    EleccionCampo = granjero.TrabajarEnElCampo();
+                    EleccionCampo = granjero.TrabajarCampo();
 
 
                     Console.BackgroundColor = ConsoleColor.DarkBlue;
